@@ -1,20 +1,20 @@
 <html>
 	<head>
-		<script src="jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
 		<script>
 			$(document).ready(function()
 			{
 				$("button").click(function()
 				{
-					var cc=Math.random()*10;
+					var cc=Math.random()*3;
 					var uc=$("#u").val();
 					var ccounter=0;
 					var ucounter=0;
-					if(cc<=3)
+					if(cc==0)
 					{
 						$("#c").val("R");
 					}
-					else if(cc>3 && cc<=6)
+					else if(cc==1)
 					{
 						$("#c").val("P");
 					}
